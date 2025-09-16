@@ -1,0 +1,28 @@
+.hero {
+  font-family: $oswald;
+  text-decoration: none;
+  color: $white;
+  background-color: $basic-green;
+  font-size: 36px;
+  line-height: 36px;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.hero__title {
+  margin: 0;
+}
+
+.hero__subtitle {
+  margin: 0;
+  font-family: $oswald;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.hero__button {
+  text-decoration: none;
+  color: $white;
+  background-color: $basic-green;
+}

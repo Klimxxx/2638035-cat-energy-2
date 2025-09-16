@@ -1,0 +1,43 @@
+.process {}
+
+.process__header {
+  margin: 0;
+  font-family: $oswald;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.process__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.process__item {}
+
+.process__item--leaf {}
+
+.process__item--pure {}
+
+.process__item--food {}
+
+.process__item--result {}
+
+.process__text {
+  margin: 0;
+  position: relative;
+}
+
+.process__text::before {
+  content: "";
+  width: 60px;
+  height: 60px;
+  transform: rotate(0deg);
+  opacity: 1;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  background-color: $basic-green;
+  display: block;
+}
+

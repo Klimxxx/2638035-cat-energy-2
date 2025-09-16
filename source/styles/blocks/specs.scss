@@ -1,0 +1,18 @@
+.specs {
+  margin: 0;
+}
+
+.specs__block {}
+
+.specs__parameter {
+  margin: 0;
+  font-family: $oswald;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.specs__definition {
+  font-size: 12px;
+  line-height: 100%;
+  vertical-align: middle;
+}
