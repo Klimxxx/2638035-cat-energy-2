@@ -1,5 +1,12 @@
-.header {
-  background-color: #663399;
-  color: #ffffff;
-  padding: 10px 15px;
+.header {}
+
+.header__logo {
+  text-decoration: none;
+  color: #111111;
+}
+
+.header__img {}
+
+.header__button {
+  background-image: url("../../icons/menu-nav-mobile.svg");
 }

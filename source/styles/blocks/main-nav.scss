@@ -1,0 +1,20 @@
+.main-nav{}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav__item{}
+
+.main-nav__link {
+  text-decoration: none;
+  color: $black;
+  font-family: $oswald;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.main-nav__link--current{}
