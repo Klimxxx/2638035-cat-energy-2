@@ -1,12 +1,18 @@
-.header {}
+.header {
+  padding-top: 67px;
+  position: relative;
+  background: url("../../images/1/logo-text.svg") no-repeat center 23px;
+}
 
 .header__logo {
   text-decoration: none;
-  color: #111111;
+  position: absolute;
+  top: 13px;
+  left: 20px;
 }
 
 .header__img {}
 
 .header__button {
-  background-image: url("../../icons/menu-nav-mobile.svg");
+  background-image: url("../../images/1/menu-nav-mobile.svg");
 }
