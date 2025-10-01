@@ -1,4 +1,10 @@
-.program {}
+.program {
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
 
 .program__title {
   margin: 0;
@@ -8,6 +14,8 @@
   line-height: 37px;
   text-transform: uppercase;
   position: relative;
+  padding-left: 90px;
+  padding-bottom: 29px;
 }
 
 .program__title::before {
@@ -25,6 +33,7 @@
 
 .program__text {
   margin: 0;
+  padding-bottom: 23px;
 }
 
 .program__link {
@@ -35,5 +44,20 @@
   line-height: 16px;
   text-align: center;
   text-transform: uppercase;
+}
+
+.program__link::after {
+  content: "→";
+  margin-left: 8px;
+  font-size: 14px;
+  transition: transform 0.2s ease;
+}
+
+.program--slim {
+  background: url("../../images/1/program-cat-slim.svg") no-repeat 0 0;
+}
+
+.program--pro {
+  background: url("../../images/1/program-cat-pro.svg") no-repeat 0 0;
 }
 

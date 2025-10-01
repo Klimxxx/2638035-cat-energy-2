@@ -4,7 +4,13 @@
 @import "./common/fonts.scss";
 @import "./common/visually-hidden.scss";
 
+/* COMPONENTS */
+@import "./components/inner-title.scss";
+@import "./components/inner-text.scss";
+@import "./components/input-text.scss";
+
 /* BLOCKS */
+/* INDEX */
 @import "./blocks/header.scss";
 @import "./blocks/contacts.scss";
 @import "./blocks/costs.scss";
@@ -19,3 +25,10 @@
 @import "./blocks/social.scss";
 @import "./blocks/socials.scss";
 @import "./blocks/specs.scss";
+@import "./blocks/form.scss";
+/* CATALOG */
+@import "./blocks/catalog.scss";
+
+/* FORM */
+@import "./blocks/order-groups/order.scss";
+@import "./blocks/order-groups/pet-group.scss"

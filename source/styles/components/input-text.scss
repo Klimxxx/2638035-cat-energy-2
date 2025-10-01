@@ -1,0 +1,19 @@
+.input-text {
+  display: flex;
+  gap: 8px;
+}
+
+.input-text__label {
+  font-family: $oswald;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $black-text;
+  padding-top: 10px;
+}
+
+.input-text__input {
+  height: 45px;
+  flex-grow: 1;
+  border: 1px solid #e7e7e7;
+}
