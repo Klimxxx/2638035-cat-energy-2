@@ -1,5 +1,19 @@
 .header {
-  background-color: #663399;
-  color: #ffffff;
-  padding: 10px 15px;
+  padding-top: 65px;
+  position: relative;
+  background: url("../../images/1/logo-text.svg") no-repeat center 23px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.header__logo {
+  text-decoration: none;
+  position: absolute;
+  top: 13px;
+  left: 20px;
+}
+
+.header__img {}
+
+.header__button {
+  background-image: url("../../images/1/menu-nav-mobile.svg");
 }

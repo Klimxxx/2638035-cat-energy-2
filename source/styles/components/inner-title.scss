@@ -1,0 +1,18 @@
+.inner-title {
+  margin: 0 20px;
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+
+  @media (min-width: $tablet) {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0 70px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0 auto;
+    width: 1220px;
+  }
+}

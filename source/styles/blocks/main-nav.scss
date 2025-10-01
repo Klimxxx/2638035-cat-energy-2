@@ -1,0 +1,38 @@
+.main-nav {
+  position: relative;
+}
+
+.main-nav__toggle {
+  background: url("../../images/1/mobile-close-button.svg") no-repeat center center;
+  width: 18px;
+  height: 18px;
+  border: none;
+  position: absolute;
+  top: -46px;
+  right: 21px;
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: none;
+}
+
+.main-nav__item {
+  border-top: 1px solid #e6e6e6;
+}
+
+.main-nav__link {
+  text-decoration: none;
+  color: $black;
+  font-family: $oswald;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  display: block;
+  padding: 21px 0 24px;
+  text-align: center;
+}
+
+.main-nav__link--current{}
