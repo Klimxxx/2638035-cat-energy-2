@@ -41,7 +41,18 @@
     <ul class="catalog__list">
       <li class="catalog__item card">
         <a class="card__link" href="#">
-          <img class="card__image" src="#" alt="Товар" width="68" height="86">
+          <picture>
+            <img class="card__image" src="./images/chicken-500@1x.png" srcset="./images/chicken-500@2x.png" alt="Товар" width="140" height="107">
+          </picture>
+          <!-- <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="./images/chicken500-desktop@1x.webp 1x, ./images/chicken500-desktop@2x.webp 2x" width="169" height="210">
+            <source type="image/webp" media="(min-width: 768px)" srcset="./images/chicken500-tablet@1x.webp 1x, ./images/chicken500-tablet@2x.webp 2x" width="200" height="210">
+            <source type="image/webp" srcset="./images/chicken500@1x.webp 1x, ./images/chicken500@2x.webp 2x" width="140" height="107">
+            <source media="(min-width: 1440px)" srcset="./images/chicken500-desktop@1x.png 1x, ./images/chicken500-desktop@2x.png 2x" type="image/png" width="169" height="210">
+            <source media="(min-width: 768px)" srcset="./images/chicken500-tablet@1x.png 1x, ./images/chicken500-tablet@2x.png 2x" type="image/png" width="200" height="210">
+            <img class="card__image" alt="Корм с курой" src="./images/chicken500@1x.png" srcset="./images/chicken500@2x.png 2x" width="140" height="107">
+          </picture> -->
+
         </a>
         <div class="card__content">
           <a class="card__link" href="#">
