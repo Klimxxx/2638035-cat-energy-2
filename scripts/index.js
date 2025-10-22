@@ -1,1 +1,1 @@
-var e=document.querySelector(".main-nav__toggle"),n=document.querySelector(".main-nav");n.classList.add("main-nav__closed");e.addEventListener("click",()=>{n.classList.toggle("main-nav__closed"),n.classList.toggle("main-nav__opened")});
+var e=document.querySelector(".main-nav__toggle"),n=document.querySelector(".main-nav");n.classList.add("main-nav--closed");e.addEventListener("click",()=>{n.classList.toggle("main-nav--closed"),n.classList.toggle("main-nav--opened")});
