@@ -113,29 +113,31 @@
       </dl>
       <div class="slider example__slider"></div>
     </section>
-
-    <section class="map">
-      <h2 class="visually-hidden">Карта</h2>
-      <img class="address-map" src="./images/map-desktop.png" alt="Карта проезда c указателем" width="320" height="362">
-      <div class="div container">
-        <div class="map-invitation invitation">
-          <div class="invitation__header">приглашаем
-            к сотрудничеству
-            дилеров!</div>
-          <address class="invitation__address address">
-            <p class="address__street">ул. Большая
-              Конюшенная, д. 19/8</p>
-            <p class="address__city">Санкт-Петербург</p>
-          </address>
-
-        </div>
-      </div>
-    </section>
   </main>
-  </section>
-
   <footer class="main-footer">
     <div class="container">
+      <section class="map">
+        <h2 class="visually-hidden">Карта</h2>
+
+        <div class="div container">
+          <div class="map-invitation invitation">
+            <div class="invitation__header">приглашаем
+              к сотрудничеству
+              дилеров!</div>
+            <address class="invitation__address address">
+              <p class="address__street">ул. Большая
+                Конюшенная, д. 19/8</p>
+              <p class="address__city">Санкт-Петербург</p>
+            </address>
+
+          </div>
+          <div class="map__container">
+            <!-- <iframe class="map__image111" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989428381984!2d30.32050301271296!3d59.93879686198291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0xa24b26c0d196de71!2sBolshaya%20Konyushennaya%20St%2C%2019%2C%20Sankt-Peterburg%2C%20Russia%2C%20191186!5e0!3m2!1sen!2s!4v1761035333839!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+            <div class="map__image--bg"></div>
+
+          </div>
+        </div>
+      </section>
       <a class="main-footer__logo logo" href="#">
         <img class="logo__image" alt="Cat Energy" src="./icons/logo-text.svg" width="202" height="59">
       </a>
@@ -143,16 +145,25 @@
         <li class="social__item">
           <a class="social__link social__link--vkontakte" href="#">
             <span class="visually-hidden">VKontakte</span>
+            <svg viewBox="0 0 28 22" fill="none" xmlns="http://www.w3.org/2000/svg" width="28" height="22">
+              <use href="./icons/stack.svg#vkontakte"></use>
+            </svg>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--youtube" href="#">
             <span class="visually-hidden">YouTube</span>
+            <svg viewBox="0 0 28 22" fill="none" xmlns="http://www.w3.org/2000/svg" width="28" height="22">
+              <use href="./icons/stack.svg#youtube"></use>
+            </svg>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--telegram" href="#">
             <span class="visually-hidden">Telegram</span>
+            <svg viewBox="0 0 28 22" fill="none" xmlns="http://www.w3.org/2000/svg" width="28" height="22">
+              <use href="./icons/stack.svg#telegram"></use>
+            </svg>
           </a>
         </li>
       </ul>
@@ -160,9 +171,9 @@
       <div class="html-academy">
         <a class="html-academy__link" href="#">
           <h3 class="html-academy__title">HTML Academy</h3>
-        </a>
-        <a class="html-academy__link" href="#">
-          <img class="html-academy__logo" src="icons/html-academy.svg" alt="Логотип html academy" width="50" height="50">
+          <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <use href="./icons/stack.svg#html-academy"></use>
+          </svg>
         </a>
       </div>
 
