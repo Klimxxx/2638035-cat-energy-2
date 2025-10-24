@@ -4,6 +4,10 @@
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 16px 46px;
+  gap: 5px;
 }
 
 .costs__definition {

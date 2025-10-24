@@ -1,0 +1,25 @@
+.address {
+  font-family: $lato;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #444444;
+  font-style: normal;
+  text-transform: none;
+}
+
+.address__street {
+  margin: 0;
+  // font-family: inherit;
+  // font-weight: 400;
+  // font-size: 14px;
+  // line-height: 20px;
+}
+
+.address__city {
+  margin: 0;
+  // font-family: inherit;
+  // font-weight: 400;
+  // font-size: 14px;
+  // line-height: 20px;
+}

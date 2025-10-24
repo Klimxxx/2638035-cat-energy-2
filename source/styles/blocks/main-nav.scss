@@ -3,7 +3,7 @@
 }
 
 .main-nav__toggle {
-  background: url("../../images/1/mobile-close-button.svg") no-repeat center center;
+  background: url("../../icons/stack.svg#mobile-close-button") no-repeat center center;
   width: 24px;
   height: 24px;
   border: none;
@@ -16,12 +16,12 @@
 
 .main-nav--closed .main-nav__toggle {
   display: block;
-  background: url("../../images/1/menu-nav-mobile.svg") no-repeat 0 0;
+  background: url("../../icons/stack.svg#menu-nav-mobile") no-repeat 0 0;
 }
 
 .main-nav--opened .main-nav__toggle {
   display: block;
-  background: url("../../images/1/mobile-close-button.svg") no-repeat 0 0;
+  background: url("../../icons/stack.svg#mobile-close-button") no-repeat 0 0;
 }
 
 .main-nav__list {
@@ -39,7 +39,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 30;
+  z-index: 40;
   background-color: #ffffff;
   width: 100%;
 }

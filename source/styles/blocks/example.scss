@@ -1,14 +1,17 @@
-.example {}
+.example {
+  padding: 5px 0 10px 20px;
+}
 
 .example__header {
-  margin: 0;
+  margin: 0 0 40px;
   font-family: $oswald;
   font-size: 36px;
   line-height: 40px;
 }
 
 .example__description {
-  margin: 0;
+  margin: 0 0 20px;
+  width: 286px;
 }
 
 .example__specs {}
