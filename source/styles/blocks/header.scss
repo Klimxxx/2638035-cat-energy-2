@@ -1,8 +1,15 @@
 .header {
   padding-top: 64px;
   position: relative;
-  background: url("../../images/1/logo-text.svg") no-repeat center 23px;
+  background: url("../../images/logo/logo-text.svg") no-repeat center 23px;
   border-bottom: 1px solid #e6e6e6;
+
+  @media (min-width: $tablet) {
+    padding: 40px 35px 10px;
+    background: none;
+    border-bottom: none;
+    min-height: 38px;
+  }
 }
 
 .header__logo {
@@ -10,10 +17,14 @@
   position: absolute;
   top: 13px;
   left: 20px;
+
+  @media (min-width: $tablet) {
+    top: 25px;
+    left: 30px;
+  }
 }
 
-.header__img {}
-
-.header__button {
-  background-image: url("../../images/1/menu-nav-mobile.svg");
+.header__img {
+  display: block;
 }
+

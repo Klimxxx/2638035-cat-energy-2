@@ -4,9 +4,39 @@
   color: $white;
   font-size: 36px;
   line-height: 36px;
-  letter-spacing: 0;
   text-align: center;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet) {
+    color: #000000;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    margin: 0 auto;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 709px;
+    box-sizing: border-box;
+    padding: 52px 91px 526px;
+
+    &::before {
+      content: "";
+      width: 709px;
+      height: 609px;
+      position: absolute;
+      background-image:
+        image-set(
+          url("../../images/hero/index-can-t@1x.webp") 1x type("image/webp"),
+          url("../../images/hero/index-can-t@1x.jpg") 1x type("image/jpeg"),
+          url("../../images/hero/index-can-t@2x.webp") 2x type("image/webp"),
+          url("../../images/hero/index-can-t@2x.jpg") 2x type("image/jpeg")
+        );
+      background-repeat: no-repeat;
+      background-position: top left;
+      // z-index: 30;
+    }
+  }
 }
 
 .hero__block {
@@ -24,27 +54,36 @@
     margin-left: -140px;
     background-image:
       image-set(
-        url("../../images/mobile/index-can-mobile@1x.webp") 1x type("image/webp"),
-        url("../../images/mobile/index-can-mobile@1x.png") 1x type("image/png"),
-        url("../../images/mobile/index-can-mobile@2x.webp") 2x type("image/webp"),
-        url("../../images/mobile/index-can-mobile@2x.png") 2x type("image/png")
+        url("../../images/hero/index-can-mobile@1x.webp") 1x type("image/webp"),
+        url("../../images/hero/index-can-mobile@1x.png") 1x type("image/png"),
+        url("../../images/hero/index-can-mobile@2x.webp") 2x type("image/webp"),
+        url("../../images/hero/index-can-mobile@2x.png") 2x type("image/png")
       );
     background-repeat: no-repeat;
     background-position: 0 0;
     z-index: 30;
+  }
+
+  @media (min-width: $tablet) {
+    margin: 0;
+    padding: 0;
+
+    &::before {
+      content: "";
+      display: none;
+    }
   }
 }
 
 .hero__wrapper {
   background-color: #4b4a4f;
   padding: 26px 0 165px;
-  // background-image: url("../../images/mobile/index-background-desktop.jpg");
   background-image:
     image-set(
-      url("../../images/mobile/index-background@1x.webp") 1x type("image/webp"),
-      url("../../images/mobile/index-background@1x.png") 1x type("image/png"),
-      url("../../images/mobile/index-background@2x.webp") 2x type("image/webp"),
-      url("../../images/mobile/index-background@2x.png") 2x type("image/png")
+      url("../../images/hero/index-background@1x.webp") 1x type("image/webp"),
+      url("../../images/hero/index-background@1x.png") 1x type("image/png"),
+      url("../../images/hero/index-background@2x.webp") 2x type("image/webp"),
+      url("../../images/hero/index-background@2x.png") 2x type("image/png")
     );
   background-position: center top;
   background-repeat: no-repeat;
@@ -67,16 +106,32 @@
     left: 0;
     z-index: 20;
   }
+
+  @media (min-width: $tablet) {
+    background: none;
+    padding: 0;
+
+    &::before {
+      display: none;
+    }
+  }
 }
 
 .hero__title {
   font-family: $oswald;
-  font-size: 36px;
-  line-height: 36px;
   text-align: center;
   font-weight: 400;
   width: 270px;
   margin: 0 auto 25px;
+
+  @media (min-width: $tablet) {
+    color: #000000;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    width: auto;
+    margin: 0 0 41px;
+  }
 }
 
 .hero__subtitle {
@@ -85,6 +140,12 @@
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0 0 27px;
+  }
 }
 
 .hero__button {
@@ -98,4 +159,17 @@
   font-family: inherit;
   text-transform: uppercase;
   padding: 10px 0;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    padding: 14px 5px;
+    width: 242px;
+    display: inline-block;
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 10;
+  }
 }
