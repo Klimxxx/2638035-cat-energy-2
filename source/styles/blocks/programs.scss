@@ -1,4 +1,8 @@
-.programs{}
+.programs {
+  @media (min-width: $tablet) {
+    margin: 0 30px;
+  }
+}
 
 .programs__list {
   margin: 0;
@@ -6,4 +10,14 @@
   list-style: none;
 }
 
-.programs__unit{}
+.programs__unit {
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 30px;
+  }
+
+  &:last-child {
+    margin-bottom: 18px;
+  }
+}
