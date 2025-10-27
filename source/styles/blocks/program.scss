@@ -84,6 +84,7 @@
   line-height: 16px;
   text-align: center;
   text-transform: uppercase;
+  padding-right: 20px;
 
   @media (min-width: $tablet) {
     font-size: 20px;
@@ -105,8 +106,32 @@
   border-top: 4.5px solid transparent;
   border-bottom: 4.5px solid transparent;
   border-left: 8px solid #000000;
-  bottom: 27px;
-  right: 133px;
+  bottom: 9px;
+  right: -13px;
+  // bottom: 28px;
+  // right: 135px;
+
+  &:hover {
+    // transform: translateY(-50%) translateX(4px);
+
+    left: 128px;
+
+
+    &::before {
+      width: 26px;
+      left: -34px;
+    }
+
+    &:active {
+      opacity: 0.3;
+      left: 128px;
+
+      &::before {
+        width: 26px;
+        left: -34px;
+      }
+    }
+  }
 
   @media (min-width: $tablet) {
     bottom: 62px;

@@ -1,7 +1,15 @@
 .social {
-  margin: 0;
+  margin: 0 0 20px;
   padding: 0;
+  padding-left: 20px;
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 62px;
+  gap: 24px;
+  place-content: center center;
+  width: calc(100% - 40px);
+  border-bottom: 1px solid #d9d9d9;
 }
 
 .social__item {}

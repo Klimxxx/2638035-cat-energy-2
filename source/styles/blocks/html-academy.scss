@@ -1,6 +1,15 @@
-.html-academy {}
+.html-academy {
+  padding: 0 0 40px;
+}
 
-.html-academy__link {}
+.html-academy__link {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 140px;
+  text-decoration: none;
+  color: #444444;
+  justify-content: center;
+}
 
 .html-academy__title {
   margin: 0;
