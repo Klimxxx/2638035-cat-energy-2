@@ -108,14 +108,10 @@
   border-left: 8px solid #000000;
   bottom: 9px;
   right: -13px;
-  // bottom: 28px;
-  // right: 135px;
 
   &:hover {
-    // transform: translateY(-50%) translateX(4px);
 
     left: 128px;
-
 
     &::before {
       width: 26px;
@@ -134,9 +130,29 @@
   }
 
   @media (min-width: $tablet) {
-    bottom: 62px;
+    bottom: 9px;
     right: unset;
-    left: 201px;
+    left: 149px;
+
+    &:hover {
+
+      left: 158px;
+
+      &::before {
+        width: 26px;
+        left: -34px;
+      }
+
+      &:active {
+        opacity: 0.3;
+        left: 128px;
+
+        &::before {
+          width: 26px;
+          left: -34px;
+        }
+      }
+    }
   }
 
   &::before {
