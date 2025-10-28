@@ -1,5 +1,5 @@
 .process {
-  padding: 0 20px 28px;
+  padding: 0 20px 17px;
 }
 
 .process__header {
@@ -25,19 +25,18 @@
   @media (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
-    gap: 137px;
+    gap: 17px 133px;
     counter-reset: my-counter;
   }
 }
 
 .process__item {
-  // width: 246px;
   min-height: 60px;
-
+  width: 249px;
   counter-increment: my-counter;
   margin-bottom: 20px;
   position: relative;
-  padding-left: 25px;
+  // padding-left: 25px;
 
   &::after {
     content: "";
@@ -54,17 +53,31 @@
 }
 
 @media (min-width: $tablet) {
-  .process__item::after {
+  .process__item {
+    min-height: 280px;
+  }
+
+  .process__item::before {
     content: counter(my-counter);
     position: absolute;
-    left: 0;
+    left: 129px;
+    top: -8px;
     color: #f2f2f2;
-
     font-family: $oswald;
-    font-weight: 400;
     font-size: 280px;
     line-height: 280px;
     text-align: center;
+    width: 80px;
+    height: 80px;
+  }
+
+  .process__item::after {
+    content: "";
+    width: 80px;
+    height: 80px;
+    top: 31px;
+    left: 10px;
+    z-index: 1;  /* поверх фона, но под цифрой */
   }
 }
 
@@ -76,23 +89,14 @@
   background-size: 25px 28px;
 }
 
-.process__item--pure {
-}
-
 .process__item--pure::after {
   background-image: url("../../icons/stack.svg#process-pure");
   background-size: 26px 29px;
 }
 
-.process__item--food {
-}
-
 .process__item--food::after {
   background-image: url("../../icons/stack.svg#process-food");
   background-size: 25px 30px;
-}
-
-.process__item--result {
 }
 
 .process__item--result::after {
@@ -104,7 +108,19 @@
 .process__text {
   margin: 0;
   position: relative;
-  padding: 0 0 0 53px;
+  padding: 0 0 0 80px;
+  width: 193px;
+}
+
+@media (min-width: $tablet) {
+  .process__text {
+    // font-family: "Lato";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 142px 0 0 11px;
+    width: 242px;
+  }
 }
 
 // .process__text::before {

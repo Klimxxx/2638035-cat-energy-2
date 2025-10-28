@@ -3,6 +3,10 @@
   display: flex;
   flex-wrap: wrap;
   gap: 32px;
+
+  @media (min-width: $tablet) {
+    gap: 43px;
+  }
 }
 
 .specs__block {
@@ -14,6 +18,10 @@
   border: 1px solid #cdcdcd;
   border-radius: 3px;
   position: relative;
+
+  @media (min-width: $tablet) {
+    width: 162px;
+  }
 }
 
 
@@ -27,6 +35,7 @@
     font-weight: 400;
     font-size: 30px;
     line-height: 37px;
+    margin: 0 0 15px;
   }
 }
 
@@ -45,4 +54,11 @@
   position: absolute;
   bottom: -9px;
   left: 19px;
+
+  @media (min-width: $tablet) {
+    width: 125px;
+    font-size: 14px;
+    line-height: 14px;
+    bottom: 0;
+  }
 }

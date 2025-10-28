@@ -1,6 +1,10 @@
 .example {
-  padding: 25px 0 10px 20px;
+  padding: 37px 0 10px 20px;
   background-color: #eaeaea;
+
+  @media (min-width: $tablet) {
+    padding: 47px 0 10px 30px;
+  }
 }
 
 .example__header {
@@ -13,6 +17,7 @@
     font-weight: 400;
     font-size: 60px;
     line-height: 60px;
+    margin: 0 0 60px;
   }
 }
 
@@ -21,7 +26,10 @@
   width: 286px;
 
   @media (min-width: $tablet) {
-    width: unset;
+    min-width: 708px;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 0 54px;
   }
 }
 
