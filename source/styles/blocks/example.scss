@@ -1,5 +1,6 @@
 .example {
-  padding: 5px 0 10px 20px;
+  padding: 25px 0 10px 20px;
+  background-color: #eaeaea;
 }
 
 .example__header {
@@ -7,11 +8,21 @@
   font-family: $oswald;
   font-size: 36px;
   line-height: 40px;
+
+  @media (min-width: $tablet) {
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .example__description {
   margin: 0 0 20px;
   width: 286px;
+
+  @media (min-width: $tablet) {
+    width: unset;
+  }
 }
 
 .example__specs {}

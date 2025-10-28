@@ -8,10 +8,19 @@
   flex-wrap: wrap;
   padding: 16px 46px;
   gap: 5px;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+  }
 }
 
 .costs__definition {
   margin: 0;
 }
 
-.costs__parameter {}
+.costs__parameter {
+
+}

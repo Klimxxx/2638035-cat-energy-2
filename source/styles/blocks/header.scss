@@ -10,6 +10,12 @@
     border-bottom: none;
     min-height: 38px;
   }
+
+  @media (min-width: $desktop) {
+    padding: 0;
+    background: none;
+    border-bottom: none;
+  }
 }
 
 .header__logo {

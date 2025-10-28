@@ -34,6 +34,8 @@
         );
       background-repeat: no-repeat;
       background-position: -90px 200px;
+      bottom: -53px;
+      left: 89px;
       // z-index: 30;
     }
   }
@@ -65,6 +67,16 @@
   }
 
   @media (min-width: $tablet) {
+    margin: 0;
+    padding: 0;
+
+    &::before {
+      content: "";
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop) {
     margin: 0;
     padding: 0;
 
