@@ -103,21 +103,23 @@
         обычный корм на Cat Energy Slim. Отличный результат
         без изнуряющих тренировок! При этом он не менял своих
         привычек и по-прежнему спит по 16 часов в день.</p>
-      <dl class="example__specs specs">
-        <div class="specs__block">
-          <dd class="specs__parameter">5 КГ</dd>
-          <dt class="specs__definition">снижение веса</dt>
-        </div>
-        <div class="specs__block">
-          <dd class="specs__parameter">60 ДНЕЙ</dd>
-          <dt class="specs__definition">затрачено времени</dt>
-        </div>
-      </dl>
+      <div class="example__container">
+        <dl class="example__specs specs">
+          <div class="specs__block">
+            <dd class="specs__parameter">5 КГ</dd>
+            <dt class="specs__definition">снижение веса</dt>
+          </div>
+          <div class="specs__block">
+            <dd class="specs__parameter">60 ДНЕЙ</dd>
+            <dt class="specs__definition">затрачено времени</dt>
+          </div>
+        </dl>
 
-      <dl class="costs">
-        <dd class="costs__definition">Затраты на питание:</dd>
-        <dt class="costs__parameter">15 000 РУБ.</dt>
-      </dl>
+        <dl class="costs">
+          <dd class="costs__definition">Затраты на питание:</dd>
+          <dt class="costs__parameter">15 000 РУБ.</dt>
+        </dl>
+      </div>
       <div class="slider example__slider">Слайдер</div>
     </section>
   </main>
@@ -147,7 +149,10 @@
       </section>
       <div class="logo-wrapper">
         <a class="main-footer__logo logo" href="#">
-          <img class="logo__image" alt="Cat Energy" src="./images/logo/logo-text.svg" width="128" height="24">
+          <span class="visually-hidden">На главную страницу</span>
+          <svg class="logo__image" width="101" height="18" viewBox="0 0 101 18" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <use href="./icons/stack.svg#logo-text"></use>
+          </svg>
         </a>
         <div class="logo-divider"></div>
       </div>
@@ -181,7 +186,7 @@
       <div class="html-academy">
         <a class="html-academy__link" href="#">
           <h3 class="html-academy__title">HTML Academy</h3>
-          <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="html-academy__logo" width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
             <use href="./icons/stack.svg#html-academy"></use>
           </svg>
         </a>

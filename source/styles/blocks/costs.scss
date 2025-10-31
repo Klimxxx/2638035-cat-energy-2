@@ -6,21 +6,25 @@
   text-transform: uppercase;
   display: flex;
   flex-wrap: wrap;
-  padding: 16px 46px;
+  padding: 0 46px;
   gap: 5px;
 
   @media (min-width: $tablet) {
     font-size: 20px;
     line-height: 20px;
-    text-align: center;
     text-transform: uppercase;
+    padding: 10px 0 19px;
+    width: 174px;
+    text-align: right;
   }
 }
 
 .costs__definition {
-  margin: 0;
+  margin: 0 0 15px;
 }
 
 .costs__parameter {
-
+  @media (min-width: $tablet) {
+    width: 174px;
+  }
 }

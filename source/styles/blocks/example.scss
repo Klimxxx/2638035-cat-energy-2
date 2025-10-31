@@ -7,6 +7,14 @@
   }
 }
 
+.example__container {
+  @media (min-width: $tablet) {
+    display: flex;
+    gap: 167px;
+    margin-bottom: 80px;
+  }
+}
+
 .example__header {
   margin: 0 0 40px;
   font-family: $oswald;

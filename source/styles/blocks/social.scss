@@ -14,4 +14,16 @@
 
 .social__item {}
 
-.social__link {}
+.social__link {
+  color: #666666;
+
+  &:hover {
+    color: $basic-theme;
+  }
+
+  &:active {
+    color: $basic-theme;
+    opacity: 0.3;
+  }
+}
+

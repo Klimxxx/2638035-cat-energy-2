@@ -10,11 +10,33 @@
   color: #444444;
   justify-content: center;
   align-items: center;
+  // color: #666666;
+
+  &:hover {
+    color: $basic-theme;
+  }
+
+  &:active {
+    color: $basic-theme;
+    opacity: 0.3;
+  }
 }
 
 .html-academy__title {
   margin: 0;
+  font-weight: 400;
+  transition: opacity 0.3s ease;
+  color: #444444;
 }
 
-.html-academy__logo {}
+
+.html-academy__logo {
+  fill: #666666;
+  transition: fill 0.3s ease;
+}
+
+
+.html-academy__link:hover .html-academy__logo {
+  fill: $basic-theme;
+}
 

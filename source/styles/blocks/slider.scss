@@ -1,7 +1,13 @@
 .slider {
   width: 280px;
   height: 256px;
-  background-color: #e32727;
+  background-color: aqua;
   margin: 0 auto 40px;
+
+
+  @media (min-width: $tablet) {
+    width: 560px;
+    height: 512px;
+  }
 }
 
