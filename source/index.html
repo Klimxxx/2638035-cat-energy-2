@@ -120,7 +120,50 @@
           <dt class="costs__parameter">15 000 РУБ.</dt>
         </dl>
       </div>
-      <div class="slider example__slider">Слайдер</div>
+      <div class="example__slider-container">
+        <div class="example__slider slider">
+          <ul class="slider__list">
+            <li class="slider__screen slider__screen--before">
+              <picture>
+                <source media="(min-width: 768px)" type="image/webp" width="560" height="512" srcset="
+                    ./images/slider/slider-cat-before-t@1x.webp 1x,
+                    ./images/slider/slider-cat-before-t@2x.webp 2x">
+                <source media="(min-width: 768px)" type="image/png" width="560" height="512" srcset="
+                    ./images/slider/slider-cat-before-t@1x.png 1x,
+                    ./images/slider/slider-cat-before-t@2x.png 2x">
+
+                <source type="image/webp" srcset="
+                    ./images/slider/slider-cat-before@1x.webp 1x,
+                    ./images/slider/slider-cat-before@2x.webp 2x">
+                <img class="slider__image" src="./images/slider/slider-cat-before@1x.png" srcset="./images/slider/slider-cat-before@2x.png 2x" alt="Толстый кот" width="280" height="256">
+              </picture>
+
+            </li>
+            <li class="slider__screen slider__screen--after">
+              <picture>
+                <source media="(min-width: 768px)" type="image/webp" width="560" height="512" srcset="
+                    ./images/slider/slider-cat-after-t@1x.webp 1x,
+                    ./images/slider/slider-cat-after-t@2x.webp 2x">
+                <source media="(min-width: 768px)" type="image/png" width="560" height="512" srcset="
+                    ./images/slider/slider-cat-after-t@1x.png 1x,
+                    ./images/slider/slider-cat-after-t@2x.png 2x">
+
+                <source type="image/webp" srcset="
+                    ./images/slider/slider-cat-after@1x.webp 1x,
+                    ./images/slider/slider-cat-after@2x.webp 2x">
+                <img class="slider__image" src="./images/slider/slider-cat-after@1x.png" srcset="./images/slider/slider-cat-after@2x.png 2x" alt="Худой кот" width="280" height="256">
+              </picture>
+
+            </li>
+          </ul>
+          <button class="slider__control" type="button">
+            <span class="visually-hidden">Показать результат до и после</span>
+            <svg class="slider__icon" width="24" height="18">
+              <use href="./icons/stack.svg#slider-arrows"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
     </section>
   </main>
   <footer class="main-footer">
