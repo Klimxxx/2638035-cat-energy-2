@@ -4,12 +4,23 @@
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 30px;
+  }
 }
 
 .map-invitation {
   padding: 20px 0 28px 19px;
   display: grid;
   grid-template-columns: repeat(auto-fill, 140px);
+
+  @media (min-width: $tablet) {
+    grid-template-columns: 163px 157px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 45px 70px 58px;
+  }
 }
 
 

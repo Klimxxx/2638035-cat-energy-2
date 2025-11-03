@@ -10,6 +10,13 @@
   place-content: center center;
   width: calc(100% - 40px);
   border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet) {
+    margin: 0 0 0 37px;
+    padding: 0;
+    border-bottom: none;
+    width: unset;
+  }
 }
 
 .social__item {}

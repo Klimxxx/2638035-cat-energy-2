@@ -1,5 +1,10 @@
 .html-academy {
   padding: 0 0 40px;
+
+  @media (min-width: $tablet) {
+
+    padding: 0;
+  }
 }
 
 .html-academy__link {
@@ -19,6 +24,11 @@
   &:active {
     color: $basic-theme;
     opacity: 0.3;
+  }
+
+  @media (min-width: $tablet) {
+
+    gap: 23px;
   }
 }
 
