@@ -2,23 +2,46 @@
   @media (min-width: $tablet) {
     margin: 0 30px;
   }
+
+  @media (min-width: $desktop) {
+    margin: 0;
+  }
 }
 
 .programs__list {
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    margin-left: 110px;
+    margin-bottom: 0;
+  }
 }
 
 .programs__unit {
   margin-bottom: 17px;
-  // padding-top: 7px;
 
   @media (min-width: $tablet) {
     margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 18px;
+    }
   }
 
-  &:last-child {
-    margin-bottom: 18px;
+  @media (min-width: $desktop) {
+    width: 570px;
+    min-height: 374px;
+    margin-bottom: 0;
+    box-sizing: border-box;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
+

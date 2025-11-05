@@ -10,12 +10,11 @@
 .html-academy__link {
   display: flex;
   flex-wrap: wrap;
-  gap: 140px;
   text-decoration: none;
   color: #444444;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  // color: #666666;
+  padding: 0 20px;
 
   &:hover {
     color: $basic-theme;

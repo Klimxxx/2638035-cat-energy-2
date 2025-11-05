@@ -7,6 +7,10 @@
   @media (min-width: $tablet) {
     gap: 43px;
   }
+
+  @media (min-width: $tablet) {
+    margin: 0 0 42px;
+  }
 }
 
 .specs__block {
@@ -60,5 +64,6 @@
     font-size: 14px;
     line-height: 14px;
     bottom: 0;
+    margin: -23px auto 5px;
   }
 }

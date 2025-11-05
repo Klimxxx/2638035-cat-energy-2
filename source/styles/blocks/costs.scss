@@ -17,6 +17,12 @@
     width: 174px;
     text-align: right;
   }
+
+  @media (min-width: $tablet) {
+    width: unset;
+    text-align: unset;
+    gap: 67px;
+  }
 }
 
 .costs__definition {

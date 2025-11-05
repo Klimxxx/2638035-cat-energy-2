@@ -11,6 +11,11 @@
     padding: 77px 312px 53px 53px;
     margin: 0;
   }
+
+  @media (min-width: $desktop) {
+    padding: 77px 61px 55px 52px;
+    margin: 82px 0 0;
+  }
 }
 
 .program::before {
@@ -33,6 +38,14 @@
     left: unset;
     right: 63px;
   }
+
+  @media (min-width: $desktop) {
+    width: 100px;
+    height: 100px;
+    top: 43px;
+    left: 52px;
+    right: unset;
+  }
 }
 
 
@@ -54,6 +67,12 @@
     line-height: 36px;
     margin-bottom: 24px;
   }
+
+  @media (min-width: $desktop) {
+    padding: 0 20px 73px 162px;
+    line-height: 36px;
+    margin-bottom: 0;
+  }
 }
 
 .program__text {
@@ -66,11 +85,20 @@
   @media (min-width: $tablet) {
     font-size: 16px;
     line-height: 24px;
-    // padding: 77px 0 53px 53px;
     padding: 0;
     margin: 0 0 58px;
     min-width: 340px;
     min-height: 96px;
+    border-bottom: none;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0 0 30px;
+    margin: 0;
+    min-width: unset;
+    min-height: unset;
     border-bottom: none;
   }
 }
@@ -82,9 +110,10 @@
   font-family: $oswald;
   font-size: 16px;
   line-height: 16px;
-  text-align: center;
   text-transform: uppercase;
   padding-right: 20px;
+  min-width: 116px;
+  display: inline-block;
 
   @media (min-width: $tablet) {
     font-size: 20px;
@@ -96,7 +125,6 @@
   content: "";
   margin-left: 8px;
   font-size: 14px;
-  transition: transform 0.2s ease;
 }
 
 .program__link-arrow {
@@ -106,12 +134,12 @@
   border-top: 4.5px solid transparent;
   border-bottom: 4.5px solid transparent;
   border-left: 8px solid #000000;
-  bottom: 9px;
-  right: -13px;
+  bottom: 7px;
+  right: 11px;
+  transition: transform 2s ease, left 2s ease;
 
   &:hover {
-
-    left: 128px;
+    left: 126px;
 
     &::before {
       width: 26px;
@@ -135,7 +163,7 @@
     left: 149px;
 
     &:hover {
-
+      transition: left 2s ease;
       left: 158px;
 
       &::before {
@@ -188,6 +216,14 @@
       width: 140px;
       height: 194px;
     }
+
+    @media (min-width: $desktop) {
+      top: 38px;
+      left: 68px;
+      right: unset;
+      width: 70px;
+      height: 97px;
+    }
   }
 
   // &::after {
@@ -222,6 +258,14 @@
       right: 25px;
       width: 274px;
       height: 112px;
+    }
+
+    @media (min-width: $desktop) {
+      top: 67px;
+      left: 32px;
+      right: unset;
+      width: 140px;
+      height: 56px;
     }
   }
 }

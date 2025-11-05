@@ -7,12 +7,17 @@
   font-family: $oswald;
   font-size: 36px;
   line-height: 40px;
+  font-weight: 400;
 
   @media (min-width: $tablet) {
     font-weight: 400;
     font-size: 60px;
     line-height: 60px;
     padding: 39px 9px 0;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 71px 106px 0 90px;
   }
 }
 
@@ -25,19 +30,26 @@
   @media (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
-    gap: 17px 133px;
+    gap: 17px 137px;
     counter-reset: my-counter;
     max-width: 708px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: unset;
+    margin-left: 90px;
+    gap: 80px;
   }
 }
 
 .process__item {
   min-height: 60px;
-  width: 249px;
   counter-increment: my-counter;
   margin-bottom: 20px;
   position: relative;
   // padding-left: 25px;
+  max-width: 500px;
 
   &::after {
     content: "";
@@ -61,7 +73,7 @@
   .process__item::before {
     content: counter(my-counter);
     position: absolute;
-    left: 129px;
+    left: 114px;
     top: -8px;
     color: #f2f2f2;
     font-family: $oswald;
@@ -77,8 +89,8 @@
     width: 80px;
     height: 80px;
     top: 31px;
-    left: 10px;
-    z-index: 1;  /* поверх фона, но под цифрой */
+    left: 0;
+    z-index: 1;
   }
 }
 
@@ -110,33 +122,16 @@
   margin: 0;
   position: relative;
   padding: 0 0 0 80px;
-  width: 193px;
+  min-width: 193px;
 }
 
 @media (min-width: $tablet) {
   .process__text {
-    // font-family: "Lato";
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    padding: 142px 0 0 11px;
-    width: 242px;
+    padding: 142px 0 0;
+    width: 245px;
   }
 }
-
-// .process__text::before {
-//   content: "";
-//   width: 60px;
-//   height: 60px;
-//   position: absolute;
-//   top: -4px;
-//   left: 0;
-//   background-color: $basic-theme;
-//   display: block;
-
-//   @media (min-width: $tablet) {
-//     width: 80px;
-//     height: 80px;
-//   }
-// }
 

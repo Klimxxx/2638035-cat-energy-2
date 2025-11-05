@@ -5,6 +5,11 @@
     width: 471px;
     margin-left: auto;
   }
+
+  @media (min-width: $desktop) {
+    width: 475px;
+    padding-right: 8px;
+  }
 }
 
 .main-nav__toggle {
@@ -51,6 +56,12 @@
     justify-content: flex-end;
     gap: 33px;
     flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop) {
+    width: 475px;
+    justify-content: flex-start;
+    gap: 32px;
   }
 }
 
@@ -109,7 +120,6 @@
     line-height: 100%;
     text-transform: uppercase;
     color: #ffffff;
-    background-color: red;
   }
 }
 

@@ -53,6 +53,7 @@
   border: 2px solid #666666;
   z-index: 20;
   background-color: #ffffff;
+  transition: left 2s ease;
 
 
   &::before {
@@ -123,12 +124,10 @@
 
 .slider--before .slider__control {
   left: 100%;
-  transition: all 2s ease;
 }
 
 .slider--after .slider__control {
   left: 0%;
-  transition: all 2s ease;
 }
 
 .slider__icon {
