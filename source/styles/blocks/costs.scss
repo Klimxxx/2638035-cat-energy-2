@@ -19,18 +19,28 @@
   }
 
   @media (min-width: $tablet) {
+    text-align: right;
+    gap: 0;
     width: unset;
-    text-align: unset;
-    gap: 67px;
   }
 }
 
 .costs__definition {
   margin: 0;
+
+  @media (min-width: $desktop) {
+    padding: 0 66px 0 3px;
+  }
 }
 
 .costs__parameter {
   @media (min-width: $tablet) {
     width: 174px;
+    margin: -19px 0 0;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0;
+    width: unset;
   }
 }

@@ -2,6 +2,13 @@
   padding: 0 20px 17px;
 }
 
+.process-wrapper {
+  @media (min-width: $desktop) {
+    max-width: 1220px;
+    margin: 0 auto;
+  }
+}
+
 .process__header {
   margin: 0 0 40px;
   font-family: $oswald;
@@ -17,7 +24,7 @@
   }
 
   @media (min-width: $desktop) {
-    padding: 71px 106px 0 90px;
+    padding: 71px 106px 0 0;
   }
 }
 
@@ -38,8 +45,8 @@
 
   @media (min-width: $desktop) {
     max-width: unset;
-    margin-left: 90px;
     gap: 80px;
+    justify-content: center;
   }
 }
 

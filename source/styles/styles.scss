@@ -8,9 +8,13 @@
 @import "./components/inner-title.scss";
 @import "./components/inner-text.scss";
 @import "./components/input-text.scss";
+@import "./components/button.scss";
+
 
 /* BLOCKS */
 /* INDEX */
+@import "./blocks/page.scss";
+@import "./blocks/main.scss";
 @import "./blocks/header.scss";
 @import "./blocks/contacts.scss";
 @import "./blocks/costs.scss";

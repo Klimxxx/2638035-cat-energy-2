@@ -1,6 +1,7 @@
 .programs {
   @media (min-width: $tablet) {
     margin: 0 30px;
+    padding-top: 82px;
   }
 
   @media (min-width: $desktop) {
@@ -17,8 +18,8 @@
     display: flex;
     flex-wrap: wrap;
     gap: 80px;
-    margin-left: 110px;
     margin-bottom: 0;
+    justify-content: center;
   }
 }
 

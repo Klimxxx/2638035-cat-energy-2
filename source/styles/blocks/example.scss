@@ -1,22 +1,42 @@
 .example {
   padding: 37px 20px 10px;
   background-color: #eaeaea;
+  position: relative;
 
   @media (min-width: $tablet) {
-    padding: 47px 20px 101px 30px;
+    padding: 0 0 101px;
+    background-color: #eaeaea;
   }
 
   @media (min-width: $desktop) {
-    padding: 21px 20px 0 30px;
+    padding: 21px 0 0;
     display: flex;
     gap: 150px;
+    justify-content: center;
+  }
+
+  &::before {
+    @media (min-width: $desktop) {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 160px;
+      background-color: #ffffff;
+      z-index: 1;
+    }
   }
 }
 
 .example-wrapper {
+  @media (min-width: $tablet) {
+    background-color: #ffffff;
+  }
+
   @media (min-width: $desktop) {
-    width: 436px;
-    margin-left: 79px;
+    width: 514px;
+    background-color: #eaeaea;
   }
 }
 
@@ -25,18 +45,42 @@
 
   @media (min-width: $tablet) {
     display: flex;
-    gap: 167px;
-    margin-bottom: 80px;
+    gap: 169px;
+    margin: 0;
+    padding-bottom: 55px;
+    background-color: #ffffff;
   }
 
   @media (min-width: $desktop) {
     display: block;
-    margin-bottom: 42px;
+    margin-bottom: 0;
+    background-color: #eaeaea;
+    padding-bottom: 42px;
+  }
+}
+
+.example__slider-container {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #ffffff;
+    z-index: 1;
+
+    @media (min-width: $tablet) {
+      height: 127px;
+    }
   }
 }
 
 .example__header {
   margin: 0 0 40px;
+  padding: 0 30px;
   font-family: $oswald;
   font-size: 36px;
   line-height: 40px;
@@ -47,15 +91,18 @@
     font-size: 60px;
     line-height: 60px;
     margin: 0 0 60px;
+    padding-top: 47px;
   }
 
   @media (min-width: $desktop) {
     margin: 0 0 145px;
+    padding: 0;
   }
 }
 
 .example__description {
   margin: 0 0 20px;
+  padding: 0 29px;
 
   @media (min-width: $tablet) {
     min-width: 708px;
@@ -68,6 +115,7 @@
     min-width: unset;
     width: 432px;
     margin: 0 0 70px;
+    padding: 0;
   }
 }
 
