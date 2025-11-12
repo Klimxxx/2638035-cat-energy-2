@@ -1,0 +1,35 @@
+.additional-products {
+  margin: 0 auto;
+  width: calc(100% - 40px);
+
+  @media (min-width: $tablet) {
+    width: calc(100% - 60px);
+  }
+}
+
+.additional-products__title {
+  padding: 26px 20px 34px;
+  margin: 0;
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+
+  @media (min-width: $tablet) {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 32px;
+    padding-left: 40px;
+    margin-bottom: 46px;
+  }
+}
+
+.additional-products-list {
+  margin: 0 auto 74px;
+  min-width: 280px;
+  list-style: none;
+  padding: 0;
+  border-top: 1px #cdcdcd solid;
+}
+
+.additional-products-item {}

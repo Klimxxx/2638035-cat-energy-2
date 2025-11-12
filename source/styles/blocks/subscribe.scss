@@ -1,0 +1,89 @@
+.subscribe {
+  margin: 0 auto;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  font: inherit;
+  color: inherit;
+}
+
+.subscribe__title {
+  padding: 0;
+  margin: 0 0 32px;
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+
+  @media (min-width: $tablet) {
+    font-size: 32px;
+    line-height: 32px;
+    padding-left: 49px;
+    margin: 0 0 65px;
+  }
+}
+
+.subscribe__text {
+  padding: 0 0 24px;
+  margin: 0;
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    margin: 0 auto;
+    width: 632px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+.subscribe__form {
+  @media (min-width: $tablet) {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.subscribe__input {
+  font-family: $oswald;
+  color: inherit;
+  background: none;
+  border: 1px #cdcdcd solid;
+  outline: none;
+  box-sizing: border-box;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  text-transform: uppercase;
+  width: 100%;
+  min-height: 56px;
+  padding: 0 12px;
+  margin-bottom: 16px;
+
+  @media (min-width: $tablet) {
+    width: 376px;
+  }
+}
+
+.subscribe__button {
+  margin: 0 auto;
+  width: 100%;
+  min-height: 56px;
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  border: none;
+
+  @media (min-width: $tablet) {
+    width: 256px;
+    height: 56px;
+    margin: 0;
+  }
+}

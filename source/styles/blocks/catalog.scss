@@ -4,14 +4,31 @@
 
 .catalog__inner-title {
   margin-bottom: 36px;
+
+  @media (min-width: $tablet) {
+    padding: 25px 30px 35px;
+    margin: 0;
+  }
 }
 
 .catalog__list {
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px 0;
+    margin-bottom: 48px;
+  }
 }
 
 .catalog__item {
-
+  @media (min-width: $tablet) {
+    width: 324px;
+    // min-height: 511px;
+    background-color: #f2f2f2;
+  }
 }
