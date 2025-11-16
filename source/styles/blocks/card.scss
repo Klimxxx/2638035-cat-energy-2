@@ -11,6 +11,7 @@
     padding: 0 0 40px;
     display: block;
     margin: 0 auto;
+    border-bottom: none;
 
     &::before {
       content: "";
@@ -41,6 +42,10 @@
     position: relative;
     z-index: 20;
   }
+
+  @media (min-width: $desktop) {
+    padding: 59px 0 10px;
+  }
 }
 
 .card__content {
@@ -58,7 +63,7 @@
   width: 76px;
 
   @media (min-width: $tablet) {
-    margin: 0 auto 19px;
+    margin: 0 auto 23px;
     width: 135px;
     font-size: 20px;
     line-height: 24px;
@@ -78,7 +83,7 @@
   @media (min-width: $tablet) {
     font-size: 16px;
     line-height: 20px;
-    margin-bottom: 33px;
+    margin-bottom: 40px;
   }
 }
 
@@ -95,10 +100,14 @@
     margin-bottom: 10px;
     padding-bottom: 1px;
   }
+
+  @media (min-width: $desktop) {
+    width: 169px;
+    grid-template-columns: 75px 1fr;
+  }
 }
 
 .card__measure {
-
 }
 
 .card__value {
@@ -117,17 +126,27 @@
   text-align: center;
   vertical-align: middle;
   text-transform: uppercase;
+  padding: 11px 0 10px;
 
   @media (min-width: $tablet) {
     width: 250px;
     height: 40px;
     display: block;
   }
+
+  @media (min-width: $desktop) {
+    width: 169px;
+  }
 }
 
 .card__button--add-products {
   @media (min-width: $tablet) {
     width: 632px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 244px;
+    margin: 0;
   }
 }
 

@@ -25,7 +25,7 @@
       </button>
       <ul class="main-nav__list">
         <li class="main-nav__item">
-          <a class="main-nav__link main-nav__link--current" href="#">Главная</a>
+          <a class="main-nav__link main-nav__link--current main-nav__link--current-index" href="#">Главная</a>
         </li>
         <li class="main-nav__item">
           <a class="main-nav__link" href="./catalog.html">Каталог продукции</a>
@@ -100,73 +100,77 @@
       </div>
     </section>
     <section class="example">
-      <div class="example-wrapper">
-        <h2 class="example__header">Живой пример</h2>
+      <h2 class="example__header">
+        <span class="example__header-text">Живой пример</span>
+      </h2>
+      <div class="example__block">
+        <div class="example-wrapper">
 
-        <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой
-          обычный корм на Cat Energy Slim. Отличный результат
-          без изнуряющих тренировок! При этом он не менял своих
-          привычек и по-прежнему спит по 16 часов в день.</p>
-        <div class="example__container">
-          <dl class="example__specs specs">
-            <div class="specs__block">
-              <dd class="specs__parameter">5 КГ</dd>
-              <dt class="specs__definition">снижение веса</dt>
-            </div>
-            <div class="specs__block">
-              <dd class="specs__parameter">60 ДНЕЙ</dd>
-              <dt class="specs__definition">затрачено времени</dt>
-            </div>
-          </dl>
+          <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой
+            обычный корм на Cat Energy Slim. Отличный результат
+            без изнуряющих тренировок! При этом он не менял своих
+            привычек и по-прежнему спит по 16 часов в день.</p>
+          <div class="example__container">
+            <dl class="example__specs specs">
+              <div class="specs__block">
+                <dd class="specs__parameter">5 КГ</dd>
+                <dt class="specs__definition">снижение веса</dt>
+              </div>
+              <div class="specs__block">
+                <dd class="specs__parameter">60 ДНЕЙ</dd>
+                <dt class="specs__definition">затрачено времени</dt>
+              </div>
+            </dl>
 
-          <dl class="costs">
-            <dd class="costs__definition">Затраты на питание:</dd>
-            <dt class="costs__parameter">15 000 РУБ.</dt>
-          </dl>
+            <dl class="costs">
+              <dd class="costs__definition">Затраты на питание:</dd>
+              <dt class="costs__parameter">15 000 РУБ.</dt>
+            </dl>
+          </div>
         </div>
-      </div>
-      <div class="example__slider-container">
-        <div class="example__slider slider">
-          <ul class="slider__list">
-            <li class="slider__screen slider__screen--before">
-              <picture>
-                <source media="(min-width: 768px)" type="image/webp" width="560" height="512" srcset="
+        <div class="example__slider-container">
+          <div class="example__slider slider">
+            <ul class="slider__list">
+              <li class="slider__screen slider__screen--before">
+                <picture>
+                  <source media="(min-width: 768px)" type="image/webp" width="560" height="512" srcset="
                     ./images/slider/slider-cat-before-t@1x.webp 1x,
                     ./images/slider/slider-cat-before-t@2x.webp 2x">
-                <source media="(min-width: 768px)" type="image/png" width="560" height="512" srcset="
+                  <source media="(min-width: 768px)" type="image/png" width="560" height="512" srcset="
                     ./images/slider/slider-cat-before-t@1x.png 1x,
                     ./images/slider/slider-cat-before-t@2x.png 2x">
 
-                <source type="image/webp" srcset="
+                  <source type="image/webp" srcset="
                     ./images/slider/slider-cat-before@1x.webp 1x,
                     ./images/slider/slider-cat-before@2x.webp 2x">
-                <img class="slider__image" src="./images/slider/slider-cat-before@1x.png" srcset="./images/slider/slider-cat-before@2x.png 2x" alt="Толстый кот" width="280" height="256">
-              </picture>
+                  <img class="slider__image" src="./images/slider/slider-cat-before@1x.png" srcset="./images/slider/slider-cat-before@2x.png 2x" alt="Толстый кот" width="280" height="256">
+                </picture>
 
-            </li>
-            <li class="slider__screen slider__screen--after">
-              <picture>
-                <source media="(min-width: 768px)" type="image/webp" width="560" height="512" srcset="
+              </li>
+              <li class="slider__screen slider__screen--after">
+                <picture>
+                  <source media="(min-width: 768px)" type="image/webp" width="560" height="512" srcset="
                     ./images/slider/slider-cat-after-t@1x.webp 1x,
                     ./images/slider/slider-cat-after-t@2x.webp 2x">
-                <source media="(min-width: 768px)" type="image/png" width="560" height="512" srcset="
+                  <source media="(min-width: 768px)" type="image/png" width="560" height="512" srcset="
                     ./images/slider/slider-cat-after-t@1x.png 1x,
                     ./images/slider/slider-cat-after-t@2x.png 2x">
 
-                <source type="image/webp" srcset="
+                  <source type="image/webp" srcset="
                     ./images/slider/slider-cat-after@1x.webp 1x,
                     ./images/slider/slider-cat-after@2x.webp 2x">
-                <img class="slider__image" src="./images/slider/slider-cat-after@1x.png" srcset="./images/slider/slider-cat-after@2x.png 2x" alt="Худой кот" width="280" height="256">
-              </picture>
+                  <img class="slider__image" src="./images/slider/slider-cat-after@1x.png" srcset="./images/slider/slider-cat-after@2x.png 2x" alt="Худой кот" width="280" height="256">
+                </picture>
 
-            </li>
-          </ul>
-          <button class="slider__control" type="button">
-            <span class="visually-hidden">Показать результат до и после</span>
-            <svg class="slider__icon" width="24" height="18">
-              <use href="./icons/stack.svg#slider-arrows"></use>
-            </svg>
-          </button>
+              </li>
+            </ul>
+            <button class="slider__control" type="button">
+              <span class="visually-hidden">Показать результат до и после</span>
+              <svg class="slider__icon" width="24" height="18">
+                <use href="./icons/stack.svg#slider-arrows"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
     </section>
@@ -198,7 +202,7 @@
           <a class="main-footer__logo logo" href="#">
             <span class="visually-hidden">На главную страницу</span>
             <svg class="logo__image" width="128" height="24" viewBox="0 0 101 18" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <use href="./icons/stack.svg#logo-text"></use>
+              <use href="./images/logo/logo-text.svg"></use>
             </svg>
           </a>
           <div class="logo-divider"></div>

@@ -3,12 +3,17 @@
   padding-top: 84px;
   text-align: center;
   border-bottom: solid #ebebeb 1px;
+  box-sizing: border-box;
 
   @media (min-width: $tablet) {
     margin: 130px auto 0;
     background-color: #ffffff;
     padding-top: 159px;
     border: 2px #f2f2f2 solid;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 153px;
   }
 }
 
@@ -77,6 +82,10 @@
     width: 170px;
     margin: 0 auto 79px;
   }
+
+  @media (min-width: $desktop) {
+    margin: 0 auto 84px;
+  }
 }
 
 .all-products__button {
@@ -90,4 +99,13 @@
   text-transform: uppercase;
   background-color: #f2f2f2;
   margin-bottom: 24px;
+  width: 169px;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    background-color: #ebebeb;
+  }
 }

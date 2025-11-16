@@ -9,6 +9,11 @@
     padding: 25px 30px 35px;
     margin: 0;
   }
+
+  @media (min-width: $desktop) {
+    padding: 45px 30px 35px 31px;
+    margin: 0 auto;
+  }
 }
 
 .catalog__list {
@@ -21,7 +26,13 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 12px 0;
-    margin-bottom: 48px;
+    width: 764px;
+    margin: 0 auto 48px;
+
+    @media (min-width: $desktop) {
+      width: 1220px;
+      gap: 12px 80px;
+    }
   }
 }
 
@@ -30,5 +41,9 @@
     width: 324px;
     // min-height: 511px;
     background-color: #f2f2f2;
+  }
+
+  @media (min-width: $desktop) {
+    width: 245px;
   }
 }

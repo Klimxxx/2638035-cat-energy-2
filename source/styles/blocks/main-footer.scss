@@ -8,12 +8,13 @@
   @media (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
-    padding: 55px 30px;
+    padding: 45px 10px 0 29px;
     align-items: center;
     justify-content: space-between;
   }
 
   @media (min-width: $desktop) {
-    padding: 24px 92px 24px 110px;
+    width: 1220px;
+    margin: 0 auto;
   }
 }

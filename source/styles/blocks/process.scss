@@ -1,5 +1,9 @@
 .process {
   padding: 0 20px 17px;
+
+  @media (min-width: $desktop) {
+    padding: 0;
+  }
 }
 
 .process-wrapper {
@@ -46,7 +50,9 @@
   @media (min-width: $desktop) {
     max-width: unset;
     gap: 80px;
-    justify-content: center;
+    justify-content: flex-start;
+    width: 1220px;
+    margin: 0 auto;
   }
 }
 
@@ -70,34 +76,36 @@
     background-repeat: no-repeat;
     display: block;
   }
-}
 
-@media (min-width: $tablet) {
-  .process__item {
+  @media (min-width: $tablet) {
     min-height: 280px;
+
+    &::before {
+      content: counter(my-counter);
+      position: absolute;
+      left: 114px;
+      top: -8px;
+      color: #f2f2f2;
+      font-family: $oswald;
+      font-size: 280px;
+      line-height: 280px;
+      text-align: center;
+      width: 80px;
+      height: 80px;
+    }
+
+    &::after {
+      content: "";
+      width: 80px;
+      height: 80px;
+      top: 31px;
+      left: 0;
+      z-index: 1;
+    }
   }
 
-  .process__item::before {
-    content: counter(my-counter);
-    position: absolute;
-    left: 114px;
-    top: -8px;
-    color: #f2f2f2;
-    font-family: $oswald;
-    font-size: 280px;
-    line-height: 280px;
-    text-align: center;
-    width: 80px;
-    height: 80px;
-  }
-
-  .process__item::after {
-    content: "";
-    width: 80px;
-    height: 80px;
-    top: 31px;
-    left: 0;
-    z-index: 1;
+  @media (min-width: $desktop) {
+    margin-bottom: 0;
   }
 }
 

@@ -28,6 +28,7 @@
   overflow: hidden;
   transition: all 2s ease;
 
+
   &::before {
     content: "";
     position: absolute;
@@ -47,14 +48,27 @@
   position: relative;
 
   &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 140px;
-    background-color: #ffffff;
-    z-index: 1;
+    content: none;
+  }
+
+  @media (min-width: $tablet) {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 128px;
+      background-color: #ffffff;
+      z-index: 1;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    &::before {
+
+      height: 140px;
+    }
   }
 }
 
@@ -63,14 +77,26 @@
   z-index: 1;
 
   &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 140px;
-    background-color: #ffffff;
-    z-index: 1;
+    content: none;
+  }
+
+  @media (min-width: $tablet) {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 128px;
+      background-color: #ffffff;
+      z-index: 1;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    &::before {
+      height: 140px;
+    }
   }
 }
 
