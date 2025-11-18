@@ -16,17 +16,24 @@
     padding: 10px 0 33px;
     width: 174px;
     text-align: right;
+    display: block;
   }
 
-  @media (min-width: $tablet) {
+  @media (min-width: $desktop) {
     text-align: right;
     gap: 0;
     width: unset;
+    display: flex;
+    padding: 0;
   }
 }
 
 .costs__definition {
   margin: 0;
+
+  @media(min-width: $tablet) {
+    margin: 0 0 10px;
+  }
 
   @media (min-width: $desktop) {
     padding: 0 66px 0 3px;
@@ -36,7 +43,7 @@
 .costs__parameter {
   @media (min-width: $tablet) {
     width: 174px;
-    margin: -19px 0 0;
+    margin: 0;
   }
 
   @media (min-width: $desktop) {

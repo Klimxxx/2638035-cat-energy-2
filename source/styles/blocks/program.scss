@@ -1,5 +1,5 @@
 .program {
-  padding: 20px;
+  padding: 20px 22px 18px;
   margin-bottom: 20px;
   margin-left: 20px;
   margin-right: 20px;
@@ -8,7 +8,7 @@
   background-color: #f2f2f2;
 
   @media (min-width: $tablet) {
-    padding: 77px 312px 53px 53px;
+    padding: 77px 317px 58px 53px;
     margin: 0;
   }
 
@@ -22,11 +22,9 @@
   content: "";
   width: 50px;
   height: 50px;
-  transform: rotate(0deg);
-  opacity: 1;
   position: absolute;
   top: 25px;
-  left: 20px;
+  left: 22px;
   background-color: $basic-theme;
   border-radius: 50%;
   z-index: 10;
@@ -34,7 +32,7 @@
   @media (min-width: $tablet) {
     width: 200px;
     height: 200px;
-    top: 95px;
+    top: 90px;
     left: unset;
     right: 63px;
   }
@@ -59,7 +57,7 @@
   position: relative;
   padding-left: 70px;
   padding-top: 10px;
-  padding-bottom: 29px;
+  padding-bottom: 31px;
 
   @media (min-width: $tablet) {
     padding: 0;
@@ -77,9 +75,9 @@
 
 .program__text {
   margin: 0;
-  padding-bottom: 23px;
+  padding-bottom: 21px;
   position: relative;
-  margin-bottom: 21px;
+  margin-bottom: 20px;
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $tablet) {
@@ -95,7 +93,7 @@
   @media (min-width: $desktop) {
     font-size: 16px;
     line-height: 24px;
-    padding: 0 0 30px;
+    padding: 0 0 34px;
     margin: 0;
     min-width: unset;
     min-height: unset;
@@ -111,87 +109,31 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
-  padding-right: 20px;
-  min-width: 116px;
+  padding-right: 43px;
   display: inline-block;
+
+  &::after {
+    content: "";
+    width: 24px;
+    height: 11px;
+    position: absolute;
+    left: calc(100% - 26px);
+    background: url("../../images/arrow-link.svg") no-repeat right top;
+    transition: width 0.5s ease;
+    top: 1px;
+  }
+
+  &:hover::after {
+    width: 32px;
+  }
 
   @media (min-width: $tablet) {
     font-size: 20px;
     line-height: 100%;
-  }
-}
 
-.program__link::after {
-  content: "";
-  margin-left: 8px;
-  font-size: 14px;
-}
-
-.program__link-arrow {
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-top: 4.5px solid transparent;
-  border-bottom: 4.5px solid transparent;
-  border-left: 8px solid #000000;
-  bottom: 7px;
-  right: 11px;
-  transition: transform 2s ease, left 2s ease;
-
-  &:hover {
-    left: 126px;
-
-    &::before {
-      width: 26px;
-      left: -34px;
+    &::after {
+      left: calc(100% - 17px);
     }
-
-    &:active {
-      opacity: 0.3;
-      left: 128px;
-
-      &::before {
-        width: 26px;
-        left: -34px;
-      }
-    }
-  }
-
-  @media (min-width: $tablet) {
-    bottom: 9px;
-    right: unset;
-    left: 149px;
-
-    &:hover {
-      transition: left 2s ease;
-      left: 158px;
-
-      &::before {
-        width: 26px;
-        left: -34px;
-      }
-
-      &:active {
-        opacity: 0.3;
-        left: 128px;
-
-        &::before {
-          width: 26px;
-          left: -34px;
-        }
-      }
-    }
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    left: -25px;
-    top: 50%;
-    width: 18px;
-    height: 2px;
-    background-color: #000000;
-    transform: translateY(-50%);
   }
 }
 
@@ -210,9 +152,9 @@
     z-index: 20;
 
     @media (min-width: $tablet) {
-      top: 83px;
+      top: 79px;
       left: unset;
-      right: 96px;
+      right: 93px;
       width: 140px;
       height: 194px;
     }
@@ -225,17 +167,6 @@
       height: 97px;
     }
   }
-
-  // &::after {
-  //   content: "";
-  //   position: absolute;
-  //   left: 0;
-  //   right: 0;
-  //   bottom: 0;
-  //   height: 1px;
-  //   background-color: #d9d9d9;
-  //   z-index: 10;
-  // }
 }
 
 .program--pro {
@@ -253,10 +184,10 @@
     z-index: 20;
 
     @media (min-width: $tablet) {
-      top: 139px;
+      top: 133px;
       left: unset;
-      right: 25px;
-      width: 274px;
+      right: 21px;
+      width: 276px;
       height: 112px;
     }
 
@@ -269,6 +200,7 @@
     }
   }
 }
+
 //   &::after {
 //     content: "";
 //     position: absolute;
@@ -280,4 +212,3 @@
 //     z-index: 10;
 //   }
 // }
-

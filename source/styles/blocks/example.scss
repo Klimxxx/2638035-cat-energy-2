@@ -4,8 +4,8 @@
   position: relative;
 
   @media (min-width: $tablet) {
-    padding: 0 0 101px;
-    background-color: #eaeaea;
+    padding: 0;
+    background-color: #ffffff;
   }
 
   @media (min-width: $desktop) {
@@ -13,6 +13,8 @@
     display: block;
     gap: 150px;
     justify-content: center;
+    background-color: #eaeaea;
+    padding: 0 0 66px;
   }
 }
 
@@ -33,17 +35,17 @@
 
   @media (min-width: $tablet) {
     display: flex;
-    gap: 169px;
-    margin: 0;
-    padding-bottom: 55px;
+    margin: 0 31px;
+    padding-bottom: 78px;
     background-color: #ffffff;
+    justify-content: space-between;
   }
 
   @media (min-width: $desktop) {
     display: block;
-    margin-bottom: 0;
+    margin: 0;
     background-color: #eaeaea;
-    padding-bottom: 42px;
+    padding-bottom: 0;
   }
 }
 
@@ -59,14 +61,20 @@
     height: 0;
     background-color: #ffffff;
     z-index: 1;
+  }
 
-    @media (min-width: $tablet) {
-      height: 127px;
+  @media (min-width: $tablet) {
+    background-color: #eaeaea;
+    padding: 0 0 101px;
+
+    &::before {
+      height: 151px;
     }
   }
 
   @media (min-width: $desktop) {
     margin-top: -140px;
+    padding-bottom: 0;
   }
 }
 
@@ -79,11 +87,10 @@
   font-weight: 400;
 
   @media (min-width: $tablet) {
-    font-weight: 400;
     font-size: 60px;
     line-height: 60px;
     margin: 0 0 60px;
-    padding-top: 47px;
+    padding: 47px 32px 0;
   }
 
   @media (min-width: $desktop) {
@@ -114,13 +121,12 @@
 
 .example__description {
   margin: 0 0 20px;
-  // padding: 0 29px;
 
   @media (min-width: $tablet) {
     min-width: 708px;
     font-size: 16px;
     line-height: 24px;
-    margin: 0 0 54px;
+    margin: 0 31px 54px;
   }
 
   @media (min-width: $desktop) {

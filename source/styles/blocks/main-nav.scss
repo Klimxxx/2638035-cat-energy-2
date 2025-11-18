@@ -150,10 +150,20 @@
     bottom: -8px;
     left: 0;
   }
+
+  @media(min-width: $desktop) {
+    bottom: -12px;
+  }
 }
 
-.main-nav__link--current-index::after {
+.main-nav--index .main-nav__link--current::after {
   @media (min-width: $desktop) {
     background-color: #ffffff;
+  }
+}
+
+.main-nav--index .main-nav__link {
+  @media (min-width: $desktop) {
+    color: #ffffff;
   }
 }

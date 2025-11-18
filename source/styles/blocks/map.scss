@@ -6,36 +6,33 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet) {
-    margin-bottom: 30px;
+    margin-bottom: 0;
   }
 }
 
 .map__wrapper {
   @media (min-width: $desktop) {
     position: relative;
-    padding: 100px 0;
+    padding: 93px 0 109px;
   }
 }
 
 .map__invitation {
-  padding: 17px 0 28px 19px;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 140px);
+  padding: 17px 19px 28px;
+  display: flex;
+  justify-content: space-between;
 
   @media (min-width: $tablet) {
-    grid-template-columns: 163px 157px;
     justify-content: space-between;
-    padding: 55px 70px 58px;
+    padding: 60px 70px 58px;
   }
 
   @media (min-width: $desktop) {
     width: 565px;
     background-color: #ffffff;
     box-sizing: border-box;
-    padding: 55px 79px;
+    padding: 61px 80px 53px;
     position: relative;
-    top: 63px;
-    // top: -7px;
     left: calc(50% - 610px);
     z-index: 50;
   }
@@ -47,6 +44,10 @@
   min-height: 362px;
   overflow: hidden;
 
+  @media(min-width: $tablet) {
+    height: 405px;
+  }
+
   @media (min-width: $desktop) {
     height: 100%;
     position: absolute;
@@ -57,7 +58,7 @@
 
 .map__image {
   width: 100%;
-  // height: 100%;
+  height: 100%;
   position: relative;
   z-index: 20;
 
@@ -67,12 +68,10 @@
     width: 100%;
     height: 100%;
     background-image:
-      image-set(
-        url("../../images/mobile/location@1x.webp") 1x type("image/webp"),
+      image-set(url("../../images/mobile/location@1x.webp") 1x type("image/webp"),
         url("../../images/mobile/location@2x.webp") 2x type("image/webp"),
         url("../../images/mobile/location@1x.jpg") 1x type("image/jpeg"),
-        url("../../images/mobile/location@2x.jpg") 2x type("image/jpeg")
-      );
+        url("../../images/mobile/location@2x.jpg") 2x type("image/jpeg"));
     background-position: 0 -455px;
     background-repeat: no-repeat;
     background-size: cover;
