@@ -7,10 +7,6 @@
     padding: 26px 38px 28px;
     border: 1px solid #cdcdcd;
     border-top: none;
-
-    &:not(:first-child) {
-      border-top: none;
-    }
   }
 
   @media (min-width: $desktop) {
@@ -29,7 +25,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 11px;
+    margin-bottom: 12px;
   }
 
   @media (min-width: $desktop) {
@@ -46,7 +42,6 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
-  vertical-align: middle;
   text-transform: uppercase;
 
   @media (min-width: $tablet) {
@@ -64,7 +59,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-bottom: 13px;
+  margin-bottom: 12px;
 
   @media (min-width: $tablet) {
     font-family: $lato;
@@ -72,7 +67,6 @@
     font-size: 16px;
     line-height: 20px;
     text-align: center;
-    vertical-align: middle;
   }
 
   @media (min-width: $desktop) {

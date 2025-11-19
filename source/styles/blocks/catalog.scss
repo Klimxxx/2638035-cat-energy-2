@@ -3,7 +3,7 @@
 }
 
 .catalog__inner-title {
-  margin-bottom: 36px;
+  margin-bottom: 41px;
 
   @media (min-width: $tablet) {
     padding: 25px 30px 35px;
@@ -20,6 +20,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  border-top: 1px solid #e0e0e0;
 
   @media (min-width: $tablet) {
     display: flex;
@@ -28,18 +29,17 @@
     gap: 12px 0;
     width: 764px;
     margin: 0 auto 48px;
+  }
 
-    @media (min-width: $desktop) {
-      width: 1220px;
-      gap: 12px 80px;
-    }
+  @media (min-width: $desktop) {
+    width: 1220px;
+    gap: 12px 80px;
   }
 }
 
 .catalog__item {
   @media (min-width: $tablet) {
     width: 324px;
-    // min-height: 511px;
     background-color: #f2f2f2;
   }
 

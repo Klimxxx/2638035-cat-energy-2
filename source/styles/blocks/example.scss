@@ -1,5 +1,5 @@
 .example {
-  padding: 37px 20px 10px;
+  padding: 25px 20px 41px;
   background-color: #eaeaea;
   position: relative;
 
@@ -9,9 +9,7 @@
   }
 
   @media (min-width: $desktop) {
-    padding: 0;
     display: block;
-    gap: 150px;
     justify-content: center;
     background-color: #eaeaea;
     padding: 0 0 66px;
@@ -140,5 +138,5 @@
 .example__specs {}
 
 .example__slider {
-  margin: 0 auto 40px;
+  margin: 0 auto;
 }

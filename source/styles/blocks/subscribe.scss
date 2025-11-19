@@ -1,12 +1,13 @@
 .subscribe {
-  margin: 0 auto 5px;
-  padding: 40px 20px;
+  margin: 0 auto;
+  padding: 34px 0 40px;
   box-sizing: border-box;
   font: inherit;
   color: inherit;
 
   @media (min-width: $tablet) {
-    margin: 0 auto 30px;
+    margin: 0 auto 25px;
+    padding: 73px 0 39px;
   }
 
   @media (min-width: $desktop) {
@@ -15,38 +16,19 @@
   }
 }
 
+.subscribe__container {
+  margin: 0 20px;
+}
+
 .subscribe__title {
-  padding: 0;
-  margin: 0 0 32px;
-  font-family: $oswald;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 24px;
-  position: relative;
+  margin: 0 0 26px;
 
   @media (min-width: $tablet) {
-    font-size: 32px;
-    line-height: 32px;
-    padding-left: 49px;
-    margin: 0 0 65px;
+    margin: 0 0 61px;
   }
 
   @media (min-width: $desktop) {
-    font-size: 40px;
-    line-height: 40px;
-    padding-left: 0;
     margin: 0 0 70px;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    right: -20px;
-    margin-left: 40px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: calc(50px + 2vw);
-    border-top: 2px solid $basic-theme;
   }
 }
 

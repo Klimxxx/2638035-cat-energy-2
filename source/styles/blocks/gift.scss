@@ -2,18 +2,16 @@
   margin: 0 20px;
   display: block;
   min-height: 290px;
-  background-color: gray;
+  background-color: #808080;
   text-decoration: none;
   color: #ffffff;
   box-sizing: border-box;
-  padding: 63px 0 30px;
+  padding: 60px 0 30px;
   background-image:
-    image-set(
-      url("../../images/gift/gift-background@1x.webp") 1x type("image/webp"),
-      url("../../images/gift/gift-background@1x.jpg") 1x type("image/jpeg"),
-      url("../../images/gift/gift-background@2x.webp") 2x type("image/webp"),
-      url("../../images/gift/gift-background@2x.jpg") 2x type("image/jpeg")
-    );
+    image-set(url("../../images/gift/gift-background@1x.webp") 1x type("image/webp"),
+    url("../../images/gift/gift-background@1x.jpg") 1x type("image/jpeg"),
+    url("../../images/gift/gift-background@2x.webp") 2x type("image/webp"),
+    url("../../images/gift/gift-background@2x.jpg") 2x type("image/jpeg"));
   background-position: center top;
   background-repeat: no-repeat;
   background-size: auto 100%;
@@ -32,27 +30,23 @@
   }
 
   @media (min-width: $tablet) {
-    // width: 100%;
     min-height: 200px;
     background-image:
-      image-set(
-        url("../../images/gift/gift-background-t@1x.webp") 1x type("image/webp"),
-        url("../../images/gift/gift-background-t@1x.jpg") 1x type("image/jpeg"),
-        url("../../images/gift/gift-background-t@2x.webp") 2x type("image/webp"),
-        url("../../images/gift/gift-background-t@2x.jpg") 2x type("image/jpeg")
-      );
-    margin: 0 0 0 83px;
+      image-set(url("../../images/gift/gift-background-t@1x.webp") 1x type("image/webp"),
+      url("../../images/gift/gift-background-t@1x.jpg") 1x type("image/jpeg"),
+      url("../../images/gift/gift-background-t@2x.webp") 2x type("image/webp"),
+      url("../../images/gift/gift-background-t@2x.jpg") 2x type("image/jpeg"));
+    margin: 0;
+    padding: 62px 0 30px;
   }
 
   @media (min-width: $desktop) {
     width: 245px;
     background-image:
-      image-set(
-        url("../../images/gift/gift-background-d@1x.webp") 1x type("image/webp"),
-        url("../../images/gift/gift-background-d@1x.jpg") 1x type("image/jpeg"),
-        url("../../images/gift/gift-background-d@2x.webp") 2x type("image/webp"),
-        url("../../images/gift/gift-background-d@2x.jpg") 2x type("image/jpeg")
-      );
+      image-set(url("../../images/gift/gift-background-d@1x.webp") 1x type("image/webp"),
+      url("../../images/gift/gift-background-d@1x.jpg") 1x type("image/jpeg"),
+      url("../../images/gift/gift-background-d@2x.webp") 2x type("image/webp"),
+      url("../../images/gift/gift-background-d@2x.jpg") 2x type("image/jpeg"));
     margin-bottom: 0;
     min-height: 288px;
     padding: 63px 0 21px;
@@ -73,7 +67,7 @@
   display: block;
   background: url("../../icons/stack.svg#icon-gift") center top no-repeat;
   background-size: 78px 80px;
-  padding-top: 126px;
+  padding-top: 125px;
 
   @media (min-width: $tablet) {
     padding: 8px 100px 0 401px;

@@ -2,7 +2,6 @@
   padding: 0 0 40px;
 
   @media (min-width: $tablet) {
-
     padding: 0;
   }
 }
@@ -16,17 +15,19 @@
   align-items: center;
   padding: 0 20px;
 
-  &:hover {
+  &:hover svg {
     color: $basic-theme;
   }
 
   &:active {
-    color: $basic-theme;
     opacity: 0.3;
   }
 
-  @media (min-width: $tablet) {
+  &:active svg {
+    color: $basic-theme;
+  }
 
+  @media (min-width: $tablet) {
     gap: 23px;
   }
 }
@@ -38,14 +39,11 @@
   color: #444444;
 }
 
-
 .html-academy__logo {
   fill: #666666;
   transition: fill 0.3s ease;
 }
 
-
 .html-academy__link:hover .html-academy__logo {
   fill: $basic-theme;
 }
-

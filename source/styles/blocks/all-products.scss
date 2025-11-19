@@ -1,8 +1,8 @@
 .all-products {
   position: relative;
-  padding-top: 84px;
+  padding-top: 79px;
   text-align: center;
-  border-bottom: solid #ebebeb 1px;
+  border-bottom: 1px solid #ebebeb;
   box-sizing: border-box;
 
   @media (min-width: $tablet) {
@@ -21,7 +21,7 @@
 .all-products::after {
   content: "";
   position: absolute;
-  top: 45px;
+  top: 39px;
   left: 50%;
   background-color: #d3d3d3;
   transform: translateX(-50%);
@@ -40,14 +40,13 @@
 .all-products::after {
   width: 2px;
   height: 30px;
-  top: 31px;
+  top: 25px;
 
   @media (min-width: $tablet) {
     height: 60px;
     top: 49px;
   }
 }
-
 
 .all-products__title {
   margin: 0 0 8px;
@@ -99,7 +98,7 @@
   text-transform: uppercase;
   background-color: #f2f2f2;
   margin-bottom: 24px;
-  width: 169px;
+  // width: 169px;
 
   &:hover {
     background-color: #ebebeb;

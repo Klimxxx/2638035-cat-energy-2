@@ -18,12 +18,11 @@
 }
 
 .map__invitation {
-  padding: 17px 19px 28px;
+  padding: 26px 19px 28px;
   display: flex;
   justify-content: space-between;
 
   @media (min-width: $tablet) {
-    justify-content: space-between;
     padding: 60px 70px 58px;
   }
 
@@ -41,10 +40,10 @@
 .map__container {
   position: relative;
   width: 100%;
-  min-height: 362px;
+  height: 362px;
   overflow: hidden;
 
-  @media(min-width: $tablet) {
+  @media (min-width: $tablet) {
     height: 405px;
   }
 
@@ -69,9 +68,9 @@
     height: 100%;
     background-image:
       image-set(url("../../images/mobile/location@1x.webp") 1x type("image/webp"),
-        url("../../images/mobile/location@2x.webp") 2x type("image/webp"),
-        url("../../images/mobile/location@1x.jpg") 1x type("image/jpeg"),
-        url("../../images/mobile/location@2x.jpg") 2x type("image/jpeg"));
+      url("../../images/mobile/location@2x.webp") 2x type("image/webp"),
+      url("../../images/mobile/location@1x.jpg") 1x type("image/jpeg"),
+      url("../../images/mobile/location@2x.jpg") 2x type("image/jpeg"));
     background-position: 0 -455px;
     background-repeat: no-repeat;
     background-size: cover;
