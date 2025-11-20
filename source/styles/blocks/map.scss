@@ -17,26 +17,6 @@
   }
 }
 
-.map__invitation {
-  padding: 26px 19px 28px;
-  display: flex;
-  justify-content: space-between;
-
-  @media (min-width: $tablet) {
-    padding: 60px 70px 58px;
-  }
-
-  @media (min-width: $desktop) {
-    width: 565px;
-    background-color: #ffffff;
-    box-sizing: border-box;
-    padding: 61px 80px 53px;
-    position: relative;
-    left: calc(50% - 610px);
-    z-index: 50;
-  }
-}
-
 .map__container {
   position: relative;
   width: 100%;

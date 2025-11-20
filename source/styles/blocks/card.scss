@@ -67,6 +67,10 @@
     line-height: 24px;
     text-align: center;
   }
+
+  @media (min-width: $desktop) {
+    margin: 0 auto 24px;
+  }
 }
 
 .card__list {
@@ -102,6 +106,8 @@
   @media (min-width: $desktop) {
     width: 169px;
     grid-template-columns: 75px 1fr;
+    margin-bottom: 6px;
+    padding-bottom: 6px;
   }
 }
 

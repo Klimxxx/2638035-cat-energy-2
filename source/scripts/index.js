@@ -12,14 +12,14 @@ menuButton.addEventListener('click', () => {
   mainNav.classList.toggle('main-nav--opened');
 });
 
-sliderControl.addEventListener('click', ()=> {
-  if (isStarted) {
-    slider.classList.toggle('slider--after');
-    slider.classList.toggle('slider--before');
-  } else {
-    isStarted = true;
-    slider.classList.add('slider--after');
-  }
-
-});
-
+if (sliderControl) {
+  sliderControl.addEventListener('click', () => {
+    if (isStarted) {
+      slider.classList.toggle('slider--after');
+      slider.classList.toggle('slider--before');
+    } else {
+      isStarted = true;
+      slider.classList.add('slider--after');
+    }
+  });
+}

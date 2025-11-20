@@ -30,6 +30,11 @@
   @media (min-width: $tablet) {
     gap: 23px;
   }
+
+  @media (min-width: $desktop) {
+    padding: 0;
+    margin-top: -5px;
+  }
 }
 
 .html-academy__title {

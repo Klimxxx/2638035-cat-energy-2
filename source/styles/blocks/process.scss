@@ -60,7 +60,6 @@
   counter-increment: my-counter;
   margin-bottom: 20px;
   position: relative;
-  // padding-left: 25px;
   max-width: 500px;
 
   &::after {
@@ -107,8 +106,6 @@
     margin-bottom: 0;
   }
 }
-
-.process__item--leaf {}
 
 .process__item--leaf::after {
   background-image: url("../../icons/stack.svg#process-leaf");

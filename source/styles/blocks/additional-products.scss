@@ -6,8 +6,7 @@
   }
 
   @media (min-width: $desktop) {
-    margin: 0 auto;
-    width: 1220px;
+    padding: 0;
   }
 }
 
@@ -18,8 +17,9 @@
     margin-bottom: 75px;
   }
 
-  @media (min-width: $desktop) {}
-
+  @media (min-width: $desktop) {
+    margin-bottom: 43px;
+  }
 }
 
 .additional-products__container {
@@ -30,6 +30,9 @@
   @media (min-width: $desktop) {
     display: flex;
     flex-wrap: wrap;
+    width: 1220px;
+    margin: 0 auto;
+    justify-content: space-between;
   }
 }
 
