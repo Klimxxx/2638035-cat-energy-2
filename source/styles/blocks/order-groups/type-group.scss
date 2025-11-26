@@ -1,0 +1,72 @@
+.type-group {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 15px 22px 14px;
+}
+
+.type-group__option {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.type-group__radio {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.type-group__text {
+  display: flex;
+  align-items: center;
+  padding: 12px 0 12px 42px;
+  background-color: #ffffff;
+  font-weight: 500;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  transition: all 0.2s ease-in-out;
+}
+
+.type-group__text::before {
+  content: "";
+  position: absolute;
+  left: -2px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  border: 2px solid #e0e0e0;
+  border-radius: 50%;
+  background: #ffffff;
+  transition: all 0.2s ease-in-out;
+  box-sizing: border-box;
+}
+
+.type-group__text::after {
+  content: "";
+  position: absolute;
+  left: 7px;
+  top: 50%;
+  transform: translateY(-50%) scale(0);
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: $basic-theme;
+  transition: all 0.2s ease-in-out;
+}
+
+.type-group__option:hover .type-group__text::before {
+  border-color: #cdcdcd;
+}
+
+.type-group__radio:checked + .type-group__text::before {
+  border-color: #cdcdcd;
+}
+
+.type-group__radio:checked + .type-group__text::after {
+  transform: translateY(-50%) scale(1);
+}

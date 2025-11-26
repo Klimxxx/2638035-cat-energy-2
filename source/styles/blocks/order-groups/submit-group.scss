@@ -1,0 +1,67 @@
+.submit-group {}
+
+.submit-group__list {
+  margin: 0 20px 33px;
+  padding: 0;
+  list-style: none;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.submit-group__item {
+}
+
+.submit-group__label {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+  font-family: $oswald;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+  color: #444444;
+}
+
+.submit-group__input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+
+.submit-group__button {
+  border: none;
+  min-width: 280px;
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.submit-group__box {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cdcdcd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.submit-group__box::after {
+  content: "";
+  width: 18px;
+  height: 18px;
+  // background-image: url("../img/icon-check.svg");
+  background-color: red;
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0;
+}
+
+.submit-group__input:checked + .submit-group__box::after {
+  opacity: 1;
+}
+
+.submit-group__text {}
