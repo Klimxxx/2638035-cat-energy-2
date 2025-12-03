@@ -6,6 +6,11 @@
 .pet-group__list {
   margin-left: 20px;
   margin-right: 20px;
+
+  @media (min-width: $tablet) {
+    margin-left: 70px;
+    margin-right: 70px;
+  }
 }
 
 .pet-group__item {

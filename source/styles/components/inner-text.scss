@@ -5,4 +5,12 @@
   line-height: 18px;
   text-transform: uppercase;
   width: 230px;
+
+  @media (min-width: $tablet) {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    width: 323px;
+    margin: 0 70px 70px;
+  }
 }

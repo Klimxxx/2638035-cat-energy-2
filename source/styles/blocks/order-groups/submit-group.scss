@@ -53,15 +53,22 @@
   content: "";
   width: 18px;
   height: 18px;
-  // background-image: url("../img/icon-check.svg");
-  background-color: red;
-  background-size: contain;
-  background-repeat: no-repeat;
   opacity: 0;
+  background-color: $basic-theme;
+  mask-image: url("../../icons/stack.svg#tick-form");
+  mask-size: contain;
+  mask-repeat: no-repeat;
 }
 
 .submit-group__input:checked + .submit-group__box::after {
   opacity: 1;
 }
 
-.submit-group__text {}
+.submit-group__text {
+}
+
+.submit-group__text-note {
+  margin: 0;
+  padding: 20px 0 31px;
+  text-align: center;
+}
