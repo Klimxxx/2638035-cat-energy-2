@@ -16,6 +16,12 @@
   background-repeat: no-repeat;
   background-size: auto 100%;
   position: relative;
+  transition: transform 0.3s ease;
+
+  &:focus {
+    outline: none;
+    transform: scale(1.05);
+  }
 
   &::before {
     content: "";

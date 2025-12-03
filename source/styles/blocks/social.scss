@@ -24,6 +24,13 @@
 
 .social__link {
   color: #666666;
+  transition: transform 0.3s ease;
+  display: inline-block;
+
+  &:focus {
+    outline: none;
+    transform: scale(1.15);
+  }
 
   &:hover {
     color: $basic-theme;
@@ -33,4 +40,17 @@
     color: $basic-theme;
     opacity: 0.3;
   }
+
+  .social__icon {
+    width: 28px;
+    height: 22px;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+
+  &:focus .social__icon,
+  &:hover .social__icon {
+    transform: scale(1.55);
+  }
 }
+

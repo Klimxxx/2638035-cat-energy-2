@@ -27,8 +27,28 @@
 }
 
 .card__link {
+  position: relative;
+  z-index: 30;
   color: #222222;
   text-decoration: none;
+  transition: transform 0.3s ease;
+
+  &:focus {
+    outline: none;
+    transform: scale(1.15);
+  }
+}
+
+.card__title:focus,
+.card__link:focus .card__image {
+  transform: scale(1.15);
+  display: block;
+}
+
+.card__title:focus,
+.card__link:focus .card__title {
+  transform: scale(1.15);
+  display: block;
 }
 
 .card__image {

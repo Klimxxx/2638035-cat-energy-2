@@ -18,6 +18,12 @@
 
 .logo {
   display: inline-block;
+  transition: transform 0.3s ease;
+
+  &:focus {
+    outline: none;
+    transform: scale(1.05);
+  }
 }
 
 .logo__image {
@@ -25,7 +31,6 @@
   margin: 0 auto 16px;
   color: #111111;
   transition: color 0.3s ease;
-
   width: 128px;
   height: 24px;
 
