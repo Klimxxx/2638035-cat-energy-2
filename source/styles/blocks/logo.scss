@@ -22,7 +22,16 @@
 
   &:focus {
     outline: none;
-    transform: scale(1.05);
+    opacity: 0.6;
+  }
+
+  &:hover {
+    color: #3e3e3e;
+  }
+
+  &:active {
+    color: #6b6b6b;
+    opacity: 0.3;
   }
 }
 
@@ -33,12 +42,4 @@
   transition: color 0.3s ease;
   width: 128px;
   height: 24px;
-
-  &:hover {
-    color: #3e3e3e;
-  }
-
-  &:active {
-    color: #6b6b6b;
-  }
 }

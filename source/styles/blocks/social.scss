@@ -1,6 +1,6 @@
 .social {
   margin: 0 0 21px 20px;
-  padding: 0;
+  padding: 4px 0 0;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -29,7 +29,7 @@
 
   &:focus {
     outline: none;
-    transform: scale(1.15);
+    color: $basic-theme;
   }
 
   &:hover {
@@ -53,4 +53,3 @@
     transform: scale(1.55);
   }
 }
-

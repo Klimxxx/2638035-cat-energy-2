@@ -1,6 +1,3 @@
-document.documentElement.classList.remove('no-js');
-document.documentElement.classList.add('js');
-
 const menuButton = document.querySelector('.main-nav__toggle');
 const mainNav = document.querySelector('.main-nav');
 const sliderControl = document.querySelector('.slider__control');

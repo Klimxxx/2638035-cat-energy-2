@@ -175,6 +175,34 @@
       }
     }
   }
+
+  &:focus {
+    outline: none;
+    border-color: $basic-theme;
+
+    &::before {
+      background-color: $basic-theme;
+    }
+
+    &::after {
+      background-color: #ffffff;
+    }
+
+    .slider__control:active {
+      border-color: $basic-theme;
+      opacity: 0.6;
+
+      &::before {
+        background-color: $basic-theme;
+        opacity: 0.6;
+      }
+
+      &::after {
+        background-color: #ffffff;
+        opacity: 0.6;
+      }
+    }
+  }
 }
 
 .slider--before .slider__screen--before {
@@ -200,5 +228,9 @@
 }
 
 .slider__control:hover .slider__icon {
+  color: $basic-theme;
+}
+
+.slider__control:focus .slider__icon {
   color: $basic-theme;
 }

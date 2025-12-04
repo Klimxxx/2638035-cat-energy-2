@@ -22,7 +22,10 @@
 
   &:focus {
     outline: none;
-    transform: scale(1.05);
+  }
+
+  &:focus svg {
+    color: $basic-theme;
   }
 
   &:active {
